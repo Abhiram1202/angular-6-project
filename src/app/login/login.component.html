@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Welcome to AB cart{{data.name}}</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.username" placeholder="Username">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="password" [(ngModel)]="data.password" placeholder="Password">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button color="accent" [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+</div>
